@@ -1,83 +1,44 @@
-/* Custom CSS Variables */
-:root {
-  
-}
-
-/* Custom Styles */
-.app {
-  
-}
-
-.user-card {
-  
-}
-
-.user-card:hover {
-  
-}
-
-.user-avatar {
-  
-}
-
-.user-avatar-large {
-  
-}
-
-/* Bootstrap overrides */
-.btn-primary {
-  
-}
-
-.btn-primary:hover {
-  
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .user-avatar {
-    
-  }
-  
-  .display-4 {
-    
-  }
-}
-
-/* Custom card header styling */
-.card-header {
-  
-}
-
-/* Custom alert styling */
-.alert {
-  
-}
+/* ============================================================
+   Custom CSS Variables
+============================================================ */
 :root {
   --primary-color: #0d6efd;
   --secondary-color: #6c757d;
   --light-color: #f8f9fa;
   --dark-color: #212529;
 }
+
+/* ============================================================
+   Main App Styling
+============================================================ */
 .app {
   background-color: var(--light-color);
   min-height: 100vh;
 }
+
+/* ============================================================
+   User Card Styling
+============================================================ */
 .user-card {
   border: none;
-  background-color: white;
+  background-color: #ffffff;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
 .user-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* ============================================================
+   Avatar Styling
+============================================================ */
 .user-avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: var(--primary-color);
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -89,18 +50,50 @@
   height: 80px;
   border-radius: 50%;
   background-color: var(--primary-color);
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
 }
+
+/* ============================================================
+   Bootstrap Overrides
+============================================================ */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* ============================================================
+   Responsive Adjustments
+============================================================ */
 @media (max-width: 768px) {
   .user-avatar {
     width: 50px;
     height: 50px;
     font-size: 1.25rem;
   }
+
+  .display-4 {
+    font-size: 1.75rem;
+  }
+}
+
+/* ============================================================
+   Extra Styling (Optional)
+============================================================ */
+.card-header {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+.alert {
+  border-radius: 8px;
 }
 
